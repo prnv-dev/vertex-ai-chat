@@ -10,7 +10,16 @@ import { SplashScreen } from "@/components/SplashScreen";
 import { OfflineModeProvider } from "@/contexts/OfflineModeContext";
 import { LocalLLMProvider } from "@/contexts/LocalLLMContext";
 import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound";import FreeAiTools from "./pages/seo/free-ai-tools";
+import AiChat from "./pages/seo/ai-chat";
+import AiChatFree from "./pages/seo/ai-chat-free";
+import AiCodingAssistant from "./pages/seo/ai-coding-assistant";
+import BuildAiProjects from "./pages/seo/build-ai-projects";
+import VideoToCodeAi from "./pages/seo/video-to-code-ai";
+import AiForStudents from "./pages/seo/ai-for-students";
+import AiForDevelopers from "./pages/seo/ai-for-developers";
+import AiToolsOnline from "./pages/seo/ai-tools-online";
+
 import { toast } from "sonner";
 
 const queryClient = new QueryClient();
@@ -119,11 +128,25 @@ const App = () => {
                 <Toaster />
                 <Sonner />
                 <BrowserRouter>
-                  <Routes>
-                    <Route path="/" element={<Index />} />
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
-                </BrowserRouter>
+  <Routes>
+    {/* Main App */}
+    <Route path="/" element={<Index />} />
+
+    {/* SEO Pages */}
+    <Route path="/free-ai-tools" element={<FreeAiTools />} />
+    <Route path="/ai-chat" element={<AiChat />} />
+    <Route path="/ai-chat-free" element={<AiChatFree />} />
+    <Route path="/ai-coding-assistant" element={<AiCodingAssistant />} />
+    <Route path="/build-ai-projects" element={<BuildAiProjects />} />
+    <Route path="/video-to-code-ai" element={<VideoToCodeAi />} />
+    <Route path="/ai-for-students" element={<AiForStudents />} />
+    <Route path="/ai-for-developers" element={<AiForDevelopers />} />
+    <Route path="/ai-tools-online" element={<AiToolsOnline />} />
+
+    {/* Fallback */}
+    <Route path="*" element={<NotFound />} />
+  </Routes>
+</BrowserRouter>
               </TooltipProvider>
             </OfflineModeProvider>
           </LocalLLMProvider>
