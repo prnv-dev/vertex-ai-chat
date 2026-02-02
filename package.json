@@ -3,19 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "node scripts/generate-sitemap.mjs && vite build",
-  "preview": "vite preview",
-
-  "git:status": "git status",
-  "git:add": "git add .",
-  "git:commit": "git commit -m \"deploy\"",
-  "git:push": "git push origin main",
-
-  "deploy": "npm run build && git add . && git commit -m \"deploy\" && git push origin main"
-},
-
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/generate-sitemap.mjs && vite build",
+    "preview": "vite preview",
+    "git:status": "git status",
+    "git:add": "git add .",
+    "git:commit": "git commit -m \"deploy\"",
+    "git:push": "git push origin main",
+    "deploy": "npm run build && git add . && git commit -m \"deploy\" && git push origin main"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@mlc-ai/web-llm": "^0.2.80",
@@ -76,6 +73,7 @@
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.9",
+    "vite-plugin-prerender": "^1.0.8",
     "vite-plugin-pwa": "^1.2.0",
     "zod": "^3.25.76"
   },
