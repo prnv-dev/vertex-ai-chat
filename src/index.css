@@ -1,0 +1,425 @@
+/* Font imports must be at the top */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 4% 95%;
+    --foreground: 240 5% 10%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 240 5% 10%;
+
+    --popover: 240 5% 90%;
+    --popover-foreground: 240 5% 10%;
+
+    --primary: 258 89% 66%;
+    --primary-foreground: 250 100% 97%;
+
+    --secondary: 240 5% 33%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 83%;
+    --muted-foreground: 240 5% 10%;
+
+    --accent: 269 100% 98%;
+    --accent-foreground: 270 91% 65%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 240 4% 83%;
+    --input: 240 4% 83%;
+    --ring: 258 89% 66%;
+
+    --radius: 0.5rem;
+
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+
+    --sidebar-background: 70 35% 97%;
+    --sidebar-foreground: 240 5% 10%;
+    --sidebar-primary: 258 89% 66%;
+    --sidebar-primary-foreground: 250 100% 97%;
+    --sidebar-accent: 240 5% 33%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 4% 83%;
+    --sidebar-ring: 258 89% 66%;
+    --chart-1: 255 91% 76%;
+    --chart-2: 270 95% 75%;
+    --chart-3: 234 89% 73%;
+    --chart-4: 258 89% 66%;
+    --chart-5: 240 3% 46%;
+    --sidebar: 0 0% 98%;
+    --font-sans: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --font-serif: 'Cormorant Garamond', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 240 5% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 3% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 5% 26%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 255 91% 76%;
+    --primary-foreground: 261 72% 22%;
+
+    --secondary: 240 3% 46%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3% 46%;
+    --muted-foreground: 0 0% 98%;
+
+    --accent: 273 86% 20%;
+    --accent-foreground: 270 95% 75%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 240 5% 33%;
+    --input: 240 5% 33%;
+    --ring: 255 91% 76%;
+
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+
+    --sidebar-background: 70 0% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 255 91% 76%;
+    --sidebar-primary-foreground: 261 72% 22%;
+    --sidebar-accent: 270 95% 75%;
+    --sidebar-accent-foreground: 273 86% 20%;
+    --sidebar-border: 240 5% 33%;
+    --sidebar-ring: 255 91% 76%;
+    --chart-1: 252 94% 85%;
+    --chart-2: 269 97% 85%;
+    --chart-3: 229 93% 81%;
+    --chart-4: 255 91% 76%;
+    --chart-5: 240 3% 46%;
+    --sidebar: 240 3% 15%;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* Mobile-specific: prevent body scroll, use small viewport height for stability */
+  @media (max-width: 768px) {
+    html, body {
+      height: 100svh;
+      overflow: hidden;
+      overscroll-behavior: none;
+      position: fixed;
+      width: 100%;
+    }
+
+    #root {
+      height: 100svh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply bg-card rounded-lg border border-border;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .message-container {
+    @apply py-3 px-2 sm:py-4 sm:px-4;
+  }
+
+  .message-container-user {
+    @apply bg-secondary/20 border border-border/30 rounded-lg;
+  }
+
+  .message-container-ai {
+    @apply bg-card;
+  }
+
+  /* Premium prose styling for AI responses */
+  .prose-content {
+    @apply text-sm sm:text-[15px] leading-relaxed sm:leading-[1.75];
+    letter-spacing: -0.01em;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .prose-content > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  .prose-content > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Mobile code block container - prevent any horizontal overflow */
+  @media (max-width: 639px) {
+    .prose-content pre,
+    .prose-content code {
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  /* Smooth paragraph flow */
+  .prose-content p + p {
+    margin-top: 1rem;
+  }
+
+  /* List item spacing */
+  .prose-content ul li::marker,
+  .prose-content ol li::marker {
+    @apply text-muted-foreground;
+  }
+
+  /* Nested list styling */
+  .prose-content ul ul,
+  .prose-content ol ol,
+  .prose-content ul ol,
+  .prose-content ol ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Section separation for headers */
+  .prose-content h1 + *,
+  .prose-content h2 + *,
+  .prose-content h3 + *,
+  .prose-content h4 + * {
+    margin-top: 0.75rem;
+  }
+
+  /* KaTeX Display Math - ChatGPT Style: Large, Centered, Clean */
+  .prose-content .katex-display {
+    margin: 1.75rem 0;
+    padding: 0.75rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose-content .katex-display > .katex {
+    font-size: 1.35em;
+    text-align: center;
+  }
+
+  /* Inline KaTeX - Slightly larger for readability */
+  .prose-content .katex {
+    font-size: 1.15em;
+  }
+
+  /* Dark mode KaTeX colors */
+  .dark .prose-content .katex {
+    color: hsl(var(--foreground));
+  }
+
+  /* Math block separation - space between consecutive equations */
+  .prose-content .katex-display + .katex-display {
+    margin-top: 1.25rem;
+  }
+
+  /* Step headings before/after math */
+  .prose-content p + .katex-display {
+    margin-top: 1.25rem;
+  }
+
+  .prose-content .katex-display + p {
+    margin-top: 1.25rem;
+  }
+
+  /* Ensure KaTeX fractions and operators are properly sized */
+  .prose-content .katex .mfrac {
+    font-size: 1.15em;
+  }
+
+  /* Better spacing for multi-line equations */
+  .prose-content .katex-display .katex-html {
+    white-space: normal;
+    word-spacing: 0.15em;
+  }
+
+  /* Math-only paragraph fallback (frontend detection) */
+  .prose-content .math-display-block {
+    margin: 1.75rem 0;
+    padding: 0.5rem 0;
+  }
+
+  .prose-content .math-display-block .katex {
+    font-size: 1.35em;
+  }
+
+  /* Desktop: larger math */
+  @media (min-width: 640px) {
+    .prose-content .katex-display > .katex,
+    .prose-content .math-display-block .katex {
+      font-size: 1.4em;
+    }
+  }
+
+  .typing-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-muted-foreground;
+    animation: typing 1.4s infinite ease-in-out both;
+  }
+
+  .typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+
+  .typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+
+  .typing-dot:nth-child(3) {
+    animation-delay: 0s;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+}
+
+@keyframes typing {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+}

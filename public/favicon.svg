@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Background gradient - deep navy to royal blue -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    
+    <!-- V shape gradient - royal blue to cyan -->
+    <linearGradient id="vGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    
+    <!-- Node glow effect -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.8"/>
+    </radialGradient>
+    
+    <!-- Subtle inner glow for nodes -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Rounded square background -->
+  <rect width="100" height="100" rx="22" fill="url(#bgGrad)"/>
+  
+  <!-- Neural network connection lines (subtle) -->
+  <g stroke="#3b82f6" stroke-width="1" opacity="0.3">
+    <!-- Cross connections inside V -->
+    <line x1="32" y1="28" x2="50" y2="72"/>
+    <line x1="68" y1="28" x2="50" y2="72"/>
+    <line x1="38" y1="42" x2="62" y2="42"/>
+    <line x1="42" y1="54" x2="58" y2="54"/>
+  </g>
+  
+  <!-- Main V shape - left stroke -->
+  <path d="M 24 22 L 50 78" 
+        stroke="url(#vGrad)" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        fill="none"/>
+  
+  <!-- Main V shape - right stroke -->
+  <path d="M 76 22 L 50 78" 
+        stroke="url(#vGrad)" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        fill="none"/>
+  
+  <!-- Vertex nodes (neural network style) -->
+  <g filter="url(#glow)">
+    <!-- Top left node -->
+    <circle cx="24" cy="22" r="5" fill="url(#nodeGlow)"/>
+    <!-- Top right node -->
+    <circle cx="76" cy="22" r="5" fill="url(#nodeGlow)"/>
+    <!-- Bottom center node (main vertex) -->
+    <circle cx="50" cy="78" r="6" fill="url(#nodeGlow)"/>
+    
+    <!-- Inner connection nodes -->
+    <circle cx="36" cy="40" r="3" fill="#3b82f6" opacity="0.7"/>
+    <circle cx="64" cy="40" r="3" fill="#3b82f6" opacity="0.7"/>
+    <circle cx="43" cy="55" r="2.5" fill="#06b6d4" opacity="0.6"/>
+    <circle cx="57" cy="55" r="2.5" fill="#06b6d4" opacity="0.6"/>
+  </g>
+</svg>
