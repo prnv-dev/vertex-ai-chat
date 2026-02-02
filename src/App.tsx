@@ -19,6 +19,7 @@ import VideoToCodeAi from "./pages/seo/video-to-code-ai";
 import AiForStudents from "./pages/seo/ai-for-students";
 import AiForDevelopers from "./pages/seo/ai-for-developers";
 import AiToolsOnline from "./pages/seo/ai-tools-online";
+import SeoDynamicPage from "./pages/seo/SeoDynamicPage";
 
 import { toast } from "sonner";
 
@@ -142,6 +143,8 @@ const App = () => {
     <Route path="/ai-for-students" element={<AiForStudents />} />
     <Route path="/ai-for-developers" element={<AiForDevelopers />} />
     <Route path="/ai-tools-online" element={<AiToolsOnline />} />
+    <Route path="/:slug" element={<SeoDynamicPage />} />
+
 
     {/* Fallback */}
     <Route path="*" element={<NotFound />} />
