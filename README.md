@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+<h1 align="center">
+  ✨ VertexAI
+</h1>
 
-## Project info
+<p align="center">
+  <b>A refined AI chat experience built for clarity, speed, and modern workflows.</b>
+</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<p align="center">
+  <span style="opacity:0.7;">Simple • Powerful • Intentional</span>
+</p>
 
-## How can I edit this code?
+<br/>
 
-There are several ways of editing your application.
+<div align="center">
+  <img 
+    src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=20&duration=3000&pause=800&color=6CF2C2&center=true&vCenter=true&width=520&lines=Clean+AI+Chat+Experience;Built+for+Developers+%26+Creators;Premium+UI+with+Offline-Ready+Core"
+    alt="Typing animation"
+  />
+</div>
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+<h2>🧠 About</h2>
 
-Changes made via Lovable will be committed automatically to this repo.
+<p>
+<strong>VertexAI</strong> is a thoughtfully crafted AI chat web application focused on
+<strong>usability</strong>, <strong>performance</strong>, and <strong>design discipline</strong>.
+</p>
 
-**Use your preferred IDE**
+<p>
+Every interaction is designed to feel smooth, intentional, and distraction-free —
+making VertexAI a solid foundation for intelligent, production-grade products.
+</p>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<h2>🚀 Philosophy</h2>
 
-Follow these steps:
+<ul>
+  <li>Minimal UI, maximum clarity</li>
+  <li>Fast responses over flashy effects</li>
+  <li>Clean architecture that scales naturally</li>
+  <li>Premium feel without unnecessary complexity</li>
+</ul>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+<h2>🔐 Privacy & Security</h2>
 
-# Step 3: Install the necessary dependencies.
-npm i
+<p>
+Security is not optional. VertexAI is built with environment-safe practices and
+keeps sensitive configuration out of the codebase.
+</p>
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+<p>
+The repository is maintained as <strong>private by design</strong>.
+</p>
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+<h2>🧩 Project Status</h2>
 
-**Use GitHub Codespaces**
+<p>
+VertexAI is actively evolving.  
+Features are refined continuously with a focus on stability and long-term maintainability.
+</p>
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+<h2>👨‍💻 Author</h2>
 
-This project is built with:
+<p>
+<strong>Pranav</strong><br/>
+Building clean, modern, and scalable digital products.
+</p>
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+<br/>
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+<p align="center">
+  <em>VertexAI — designed to feel calm, capable, and confident.</em>
+</p>
